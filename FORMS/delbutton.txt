@@ -1,0 +1,3 @@
+
+<button class="smallBtn btn-danger" id="delete" name="delrecord" type="submit" value="<?php echo $id;?>"><?php echo $buttonText; ?></button>
+

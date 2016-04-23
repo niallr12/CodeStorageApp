@@ -1,0 +1,45 @@
+<!-- Used for when an admin is editing a users details -->
+<div id='modal_' class='modal fade'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
+        <h4 class='modal-title'>Edit User</h4>
+      </div>
+      <div class='modal-body'>
+        <div class='form-group'>
+          <label for='UserID'>User ID:</label>
+          <input type='text' class='form-control'  id='UserIDUpdate' value="<?php echo $selectedID?>" disabled required/>
+        </div>
+        <div class='form-group'>
+          <label for='FName'>First Name:</label>
+          <input type='text' class='form-control'  id='FNameUpdate' value="<?php echo $fname?>" required/>
+        </div>
+        <div class='form-group'>
+          <label for='LName'>Last Name:</label>
+          <input type='text' class='form-control'  id='LNameUpdate' value="<?php echo $lname?>" required/>
+        </div>
+        <div class='form-group'>
+          <label for='Email'>Email:</label>
+          <input type='email' class='form-control'  id='EmailUpdate' value="<?php echo $email?>" required/>
+        </div>
+        <div class='form-group'>
+          <label for='UserType'>User Type:</label>
+          <input type='text' class='form-control'  id='usertype' value="<?php echo $usertype?>" disabled required/>
+        </div>
+        <div class='form-group'>
+          <label for='UserType'>Account Locked:</label>
+          <input type='text' class='form-control'  id='Lock' value="<?php echo $accountlocked?>"  required/>
+        </div>
+        <div class='form-group'>
+          <label for='UserType'>Login Attempts:</label>
+          <input type='text' class='form-control'  id='LoginAttempts' value="<?php echo $loginattempts?>"  required/>
+        </div>
+        <button class='btn btn-md btn-primary' id='submitchanges' data-dismiss='modal'>Save Changes</button> 
+      </div>
+      <div class='modal-footer'>
+        <button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
+      </div>
+    </div>
+  </div>
+</div>
